@@ -10,7 +10,7 @@ import ClientOnly from "./components/ClientOnly";
 
 interface HomeProps {
   searchParams: IListingsParams
-};
+}
 
 const Home = async ({ searchParams }: HomeProps) => {
   const listings = await getListings(searchParams);
@@ -54,3 +54,6 @@ const Home = async ({ searchParams }: HomeProps) => {
 }
 
 export default Home;
+
+// Control static generation behavior
+export const dynamic = 'force-dynamic'; // or 'force-dynamic'
