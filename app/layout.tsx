@@ -1,6 +1,6 @@
 import React from 'react';
 import './globals.css';
-import { Archivo_Narrow } from 'next/font/google';
+import { Archivo_Narrow, Nunito } from 'next/font/google';
 
 import Navbar from './components/navbar/Navbar';
 import ClientOnly from './components/ClientOnly';
@@ -10,7 +10,9 @@ import LoginModal from './components/modals/LoginModal';
 import getCurrentUser from './actions/getCurrentUser';
 import RentModal from './components/modals/RentModal';
 
-const font = Archivo_Narrow({ subsets: ['latin'] });
+const font = Nunito({ 
+  subsets: ['latin'], 
+});
 
 export const metadata = {
   title: 'Serenity Stays',
